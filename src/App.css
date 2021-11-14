@@ -1,0 +1,66 @@
+/* MAIN FONT */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+/* CSS Rule -> font-family: 'Poppins', sans-serif; */
+
+/* MAIN COLORS */
+:root {
+  --main: #292841;
+  --secondary: #1c1b29;
+  --grey: #b9bbbe;
+  --green: #2ddfb4;
+  --orange: #fdd171;
+}
+
+.main-color {
+  color: var(--main) !important;
+}
+
+.main-background {
+  background-color: var(--main) !important;
+}
+
+.secondary-color {
+  color: var(--secondary) !important;
+}
+
+.secondary-background {
+  background-color: var(--secondary) !important;
+}
+
+.grey-color {
+  color: var(--grey) !important;
+}
+
+.grey-background {
+  background-color: var(--grey) !important;
+}
+
+.green-color {
+  color: var(--green) !important;
+}
+
+.green-background {
+  background-color: var(--green) !important;
+}
+
+.orange-color {
+  color: var(--orange) !important;
+}
+
+.orange-background {
+  background-color: var(--orange) !important;
+}
+
+/* Home */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main);
+}
