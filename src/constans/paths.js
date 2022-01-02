@@ -1,6 +1,6 @@
 const HOME_ROUTE = "/";
 
-const PRODUCTS_ROUTE = "/products";
+const PRODUCTS_ROUTE = "/products/:category";
 
 const SIGN_IN = "/signin";
 

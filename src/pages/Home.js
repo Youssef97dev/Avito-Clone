@@ -1,17 +1,17 @@
 // Core Components
 
 
-import { Header } from "../components";
+import { Header, Categories } from "../components";
 
 const Home = () => {
     return(
         <div>
-            {/* Header */}
-
+            <Header />
+            
             {/* Search Section */}
 
             {/* Categories Section */}
-
+            <Categories />
             {/* Footer  */}
         </div>
     );

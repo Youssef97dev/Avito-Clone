@@ -1,6 +1,9 @@
 // Header
 import Header from './Header';
 
+// NavBar
+import NavBar from './NavBar';
+
 // Search Section
 import SearchSection from './SearchSection';
 
@@ -9,5 +12,5 @@ import Categories from './Categories';
 
 
 
-export { Header, SearchSection, Categories };
+export { Header, NavBar, SearchSection, Categories };
 

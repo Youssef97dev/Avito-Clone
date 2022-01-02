@@ -8,12 +8,12 @@ import { Home, Products, SignUp, SignIn } from "./pages";
 import { paths } from "./constans";
 
 // Components
-import { Header } from "./components";
+import { NavBar } from "./components";
 
 const Routes = () => {
     return(
         <Router>
-            <Header />
+            <NavBar />
             <Switch>
             <Route exact path={paths.HOME_ROUTE}>
                 <Home />

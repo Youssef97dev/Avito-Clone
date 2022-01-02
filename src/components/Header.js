@@ -1,34 +1,33 @@
 // Libs
 import { NavLink } from "react-router-dom";
 
+// Common Components
+import { LinkButton } from "../common";
+
 // Constans
-import { routes } from "../constans";
+import { paths } from "../constans";
 
 
 
 const Header = () => {
-    return(
-        <header>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <div className="container">
-                    <a className="navbar-brand" href="#">LOGO</a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        {routes.map((route) => (
-                            <li className="nav-item">
-                            <NavLink className="nav-link" to={route.path}>{route.name}</NavLink>
-                            </li>
-                        ))}
-                    </ul>
+    return (
+        <div className="d-flex flex-column align-items-center home-header-container">
+            {/* Title */}
+            <h1 className="home-header-title">Sell Your Products Here...</h1>
 
-                    </div>
-                </div>
-            </nav>
-        </header>
-    );
+             {/* Subtitle */}
+             <p className="home-header-subtitle">
+                 You Can Buy Or Sell Laptops, Houses, Tools, Games, Other Things ...
+             </p>
+
+              {/* Buttons */}
+             <div className="d-flex align-items-center home-header-link">
+                <LinkButton path={paths.PRODUCTS_ROUTE} styles="main-color white-background">
+                    Browse
+                </LinkButton>
+             </div>
+        </div>
+    )
 }
 
-export default Header;
+export default Header
